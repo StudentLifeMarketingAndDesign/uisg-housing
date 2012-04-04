@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* RESET STYLES */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 12px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* MAIN STYLES */
+
+a{
+	text-decoration: none;
+	color: #359392;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+body{
+	background: url(../../images/wingman/wingman1.jpg) no-repeat center top #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: 10px;
+	 font-family: 'LindseyPro', Fallback, sans-serif;
+}
+
+h1{
+	font-size: 24px;
+	color: #359392;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p{
+	margin-bottom: 10px;
+}
+
+em{
+	font-weight: bold;
+}
+
+#content-wrapper{
+	width: 950px;
+	margin: 50px auto;
+}
+
+#logo{
+	float: left;
+}
+
+#left-content{
+	float: left;
+	width: 600px;
+	}
+	
+#left-content ul{
+	padding-top: 700px;
+}
+
+#left-content li{
+	float: left;
+	padding-right: 35px;
+}
+
+/*#left-content a{
+	font-size: 32px;
+	text-shadow: 5px 5px 5px #000;
+	font-weight: 700;
+}*/
+
+#right-content{
+	float: right;
+	width: 350px;
+}
+
+#right-content h1{
+		border-bottom: 1px dashed #fff;
+}
+
+.sideitem{
+	width: 100%;
+	margin-bottom: 20px;
+/*	border: 1px solid #fff;*/
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(51, 51, 51, 0.7);
+	line-height: 26px;
+}
+
+.sideitem h2{
+	font-size: 16px;
+}
+
+.sideitem hr{
+	width: 50%;
+	border: 1px solid #359392;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+#footer{
+	margin-top: 50px;
+	width: 950px;
+	color: #fff;
+	font-size: 20px;
+}
+
+#footer ul{
+}
+
+#footer li{
+	float: left;
+	padding-right: 45px;
+}
+
+/*button styles*/
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color: #359392;
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	margin: 20px auto;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	text-decoration: none;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.myButton2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color: #359392;
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:10px 3px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	margin: 20px auto;
+}.myButton2:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	text-decoration: none;
+}.myButton2:active {
+	position:relative;
+	top:1px;
+}
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title : Lightbox CSS
+Author : Kevin Hale
+URL : http://particletree.com/features/lightbox-gone-wild/
+
+Created : January 13, 2006
+Modified : February 1, 2006
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+#lightbox{
+	display:none;
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index:9999;
+	width:600px;
+	height: auto;
+	padding:10px;
+	margin:-220px 0 0 -250px;
+	border:1px solid #fff;
+	background:#333;
+	color: #fff;
+	text-align:left;
+	font-size: 16px;
+}
+
+#lightbox li {
+	list-style-type: disc;
+	margin-left: 35px;
+}
+
+#lightbox a{
+	font-weight: 700;
+}
+
+#lightbox[id]{
+	position:fixed;
+}
+
+#overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:5000;
+	background-color:#000;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+#overlay[id]{
+	position:fixed;
+}
+
+#lightbox.done #lbLoadMessage{
+	display:none;
+}
+#lightbox.done #lbContent{
+	display:block;
+}
+#lightbox.loading #lbContent{
+	display:none;
+}
+#lightbox.loading #lbLoadMessage{
+	display:block;
+}
+
+#lightbox.done img{
+	width:100%;
+	height:100%;
+}
+
+#lightbox h2{
+	margin:0 0 1em 0;
+}
+#lightbox h3{
+	color:#FF713F;
+}
+#lightbox.done p{
+	color:#fff;
+}
+
+#form{
+	text-align:left;
+	margin:25px;
+}
+#form ul{
+	list-style:none;
+}
+#form li{
+	margin:0 0 1em 0;
+}
+#form textarea{
+	width:100%;
+	height:150px;
+}
+
+#definition{
+	margin:25px;
+}
+.highlight{
+	background-color:#FEFFAF;
+}

@@ -1,0 +1,263 @@
+.typography{
+	font-family: Helvetica, Arial, sans-serif;
+	color:#494949;
+
+
+}
+
+
+.typography p {
+	color: #494949;
+	margin: 0 0 18px 0;
+	font-size: 16px;
+	line-height: 20px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+.typography li {
+	margin-left: 10px;
+	font-size: 18px;
+	/*color: #fef8d3;*/
+
+}
+
+.typography ul {
+	line-height: 35px;
+	margin-left: 10px;
+	list-style-type: circle;
+	list-style: outside;
+}
+
+.typography ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+
+}
+
+.typography ol li {
+	margin: 5px 0;
+	font-size:16px;
+	padding-bottom:5px;
+
+}
+.typography a {
+	color: #c6ab18;
+	text-decoration: none;
+	
+	/*padding-bottom: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-bottom: 1px dotted #77bcdd; */
+	
+		margin: 0 0 18px 0;
+
+}
+
+.typography h2 {
+	/*font-family: 'Rokkit', serif; */
+		font-family: 'Arvo', Helvetica, sans-serif;
+	font-size: 32px;
+	color: #000;
+	padding: 6px 0;
+
+}
+
+.typography h3, .typography h3 a {
+	/*font-family: 'Rokkit', serif;*/
+		font-family: 'Arvo', Helvetica, sans-serif;
+
+	font-size: 23px;
+	color: #000;
+	padding: 5px 0;
+
+}
+
+.typography .blogSummary p{
+	line-height: 25px;
+}
+
+.typography #featured-news h3 {
+	line-height: 5px;
+
+}
+
+.typography h2.postTitle  {
+	font-size: 47px;
+	font-family: 'Arvo', Helvetica, sans-serif;
+	color: #6b6a66;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal;
+
+}
+
+.typography .authorDate {
+	font-size: 16px;
+	/*line-height: 5px;*/
+
+}
+
+.typography .posted-by {
+	font-size: 16px;
+	line-height: 10px;
+
+}
+.typography strong {
+		font-weight: bold;
+		
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer-content a {
+	/* font-size: 14px; */
+	
+}
+
+#footer-content p {
+	color: white;
+	font-size: 16px;
+
+}
+
+#footer-content li a{
+	color: #fff;
+	text-transform:uppercase;
+}
+
+#footer-content ul {
+list-style: none;
+line-height: normal;
+
+}
+
+#footer-content ul li a {
+	font-size: 20px;
+}
+
+#footer-content ul li.first {
+	margin-left: 0;
+
+}
+
+#nav li { 
+	font-family: 'Arvo', Helvetica, sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	
+
+}
+
+#nav li a {
+	color: #7b7b7b;
+	text-decoration: none;
+}
+
+#nav li a :hover{
+	color:#7b7b7b;
+}
+
+.section {
+
+	color: #feee88;
+}
+
+#nav .link{
+	color: #494949;
+}
+#nav .search{
+
+
+
+img a {
+	border: none;
+}
+
+#main-feature h2 {
+	font-weight: normal;
+	font-size: 52px;
+	width: 536px;
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+#register-button, #class-button{
+	font-size: 52px;
+	background: #2a627d;
+	color: #fef8d3;
+	padding: 10px;
+	border: none;
+	
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+#schedule-button {
+	font-size: 18px;
+	background: #2a627d;
+	color: #fef8d3;
+	padding: 5px;
+	border: none;
+	
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+	
+
+#main-feature p{
+	margin-top: 50px;
+	width: 425px;
+	font-size: 24px;
+
+}
+
+span.gc-cs-link {
+color: white;
+}
+
+#committee-list h2 {
+	border-bottom: 1px solid #ddd;
+
+}
+
+/* Homepage Typography */
+
+.typography #homepage-tagline p{
+	font-size: 32px;
+	line-height: 34px;
+	font-family:'Arvo', Helvetica, sans-serif;
+
+}
+
+.tagline-link span {
+	font-size: 38px;
+	color: #213671;
+
+}
+
+#content1 h1 {
+	font-size: 62px;
+	color: #000;
+	border-bottom: 2px solid #ddd;
+	margin: 20px 0;
+	font-family: 'Arvo', Helvetica, sans-serif;
+	
+
+}
+
+. .not-popular { font-size: 0.5em; }
+. .not-very-popular { font-size: 0.6em; }
+. .somewhat-popular { font-size: 0.7em; }
+. .popular { font-size: 0.8em; }
+. .very-popular { font-size: 1em; }
+. .ultra-popular { font-size: 1.1em; }
+
+
+
+
+/*Legislative Branch*/
+
