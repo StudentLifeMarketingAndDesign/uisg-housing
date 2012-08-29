@@ -60,7 +60,7 @@ class Page_Controller extends ContentController {
         $fields = new FieldSet(
             new TextField('Name', 'Your Name'),
             new EmailField('Email', 'Your Email Address'),
-            new TextareaField('Comments','Comments? Questions?'),
+            new TextareaField('Comments','What\'s your question?'),
             new LabelField('recaptchaLabel','Please enter the following words:'),
             $recaptchaField
         );

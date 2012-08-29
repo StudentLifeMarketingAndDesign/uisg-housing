@@ -161,17 +161,27 @@ body {
 /*Blog Styles */
 
 #blog-content{
-	width: 500px;
+	width: 650px;
 	float: left;
 
 
 }
 
 .blogSummary {
+	padding: 10px 0;
 	border-bottom: 1px solid #ddd;
 	font-family:Arial, Helvetica, sans-serif;
-	line-height:20px;
+	/*line-height:20px;*/
 	
+
+}
+
+.blogSummary p {
+	line-height: 20px;
+}
+
+p.tagcloud a {
+	padding: 4px;
 
 }
 #event-content{
@@ -308,19 +318,26 @@ background: #ffffff; /* Old browsers */
 	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	
 }
 
 .tagline-link:active {
-	
+	display: block;
+	font-family: 'Arvo', Helvetica, sans-serif;
+	text-align: center;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#494949;
 
 
 }
 
-.tagline-link span{
+.tagline-link span {
 	display: block;
 	font-family: 'Arvo', Helvetica, sans-serif;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform:uppercase;
+	text-decoration:none;
 	color:#494949;
 	
 }
@@ -465,8 +482,10 @@ background: #ffffff; /* Old browsers */
 }
 
 #homepage-contact-form label {
-	font-size: 22px;
+	font-size: 16px;
+	margin: 10px 0;
 	color: #333;
+	display: block;
 
 }
 
@@ -509,7 +528,7 @@ background: #ffffff; /* Old browsers */
 	float: left;
 	width: 460px;
 	/*margin-left: 20px;*/
-	margin-top: 25px;
+	margin-top: 40px;
 	background: white;
 	padding: 20px;
 	border: 1px solid #ddd;
@@ -519,6 +538,7 @@ background: #ffffff; /* Old browsers */
 
 #homepage-contact-form h3{
 	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
 }
 
 #headline-container {
@@ -558,17 +578,25 @@ background: #ffffff; /* Old browsers */
 }
 
 #featured-news h2 {
+	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7c81f', endColorstr='#f7e96e'); /* for IE */
+	/* background: -webkit-gradient(linear, left top, left bottom, from(#e7c81f), to(#f7e96e)); /* for webkit browsers */
+	/* background: -moz-linear-gradient(top,  #e7c81f,  #f7e96e); /* for firefox 3.6+ */
+background: #CCC;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7c81f', endColorstr='#faf38a'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#e7c81f), to(#faf38a)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #e7c81f,  #faf38a); /* for firefox 3.6+ */ 
+
+}
+
+#featured-news h2 {
 	padding: 0;
 	font-family: 'Arvo', Arial, sans-serif;
 	text-transform: uppercase;
 	color:#000;
-	
-	
-
 }
 
 #featured-news span{
-	color: #333;
+	color: #ccc;
 	margin-left: 3px;
 
 }
@@ -579,53 +607,15 @@ background: #ffffff; /* Old browsers */
 }
 
 #featured-news h2 a {
+	text-decoration:none;
 	display: block;
 	padding: 10px;
 	color:#6b6a66;
 	/*text-align: center;*/
 	font-weight: normal;
-		background-image: -moz-linear-gradient(
-	    center bottom,
-	    rgb(247,233,110) 21%,
-	    rgb(231,200,31) 81%
-	);
-	background-image: url(../images/arrows.png), -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.21, rgb(247,233,110)),
-	    color-stop(0.81, rgb(231,200,31))
-	);
-	background-repeat:no-repeat;
-	background-position-x:180px, 0px;
-	background-position-y:6px, 0px;
-	
-
-
-}
-
-
-
+	background: url('../images/arrows.png') 180px 5.5px no-repeat;
+	}
 #featured-news h2 a:active {
-
-	background-image: url(../images/arrows.png), -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.81, rgb(231,200,31)),
-	    color-stop(0.21, rgb(247,233,110))
-
-	);
-	background-image: -moz-linear-gradient(
-	    center bottom,
-	    rgb(247,233,110) 81%,
-	    rgb(231,200,31) 21%
-
-	);
-	background-repeat:no-repeat;
-	background-position-x:180px, 0px;
-	background-position-y:6px, 0px;
-
 }
 
 #featured-news ul {
@@ -1000,14 +990,11 @@ input#SearchForm_SearchForm_Search {
 	color:#fff;
 	width:125px;
 	float:left;
-	background:#000;
-	opacity:0.3;
+	filter: alpha(opacity=50);
+	opacity:0.5;
 	margin-left:20px;
 	margin-top:25px;
-	background-image: url(../images/search_icon.png);
-	background-repeat:no-repeat;
-	background-position-x:105px;
-	background-position-y:4px;
+	background: url('../images/search_icon.png') 105px 4px no-repeat, #000;
 }
 
 .typography #SearchResults  li{

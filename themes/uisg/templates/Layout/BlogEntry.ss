@@ -8,13 +8,14 @@
 			<div id="breadcrumbs"><% include BreadCrumbs %></div>
 			
 			<div class="blogEntry">
-				<h2 class="postTitle">$Title</h2>
-				<p class="authorDate"> Posted on $Date.Format(F j) </p>
+				<h1 class="postTitle">$Title</h1>
+		
 				<% if TagsCollection %>
 					<p class="tags">
+                    <p class="posted-by">Last Updated on $Date.Format(F j)</p>
 						 <% _t('TAGS', 'Tags:') %> 
 						<% control TagsCollection %>
-							<a href="$Link" title="<% _t('VIEWALLPOSTTAGGED', 'View all posts tagged') %> '$Tag'" rel="tag">$Tag</a><% if Last %><% else %>,<% end_if %>
+					<a class="tags" href="$Link" title="<% _t('VIEWALLPOSTTAGGED', 'View all posts tagged') %> '$Tag'" rel="tag">$Tag</a><% if Last %><% else %>,<% end_if %>
 						<% end_control %>
 					</p>
 				<% end_if %>

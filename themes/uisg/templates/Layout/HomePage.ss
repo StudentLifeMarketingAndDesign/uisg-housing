@@ -21,10 +21,29 @@
 		
 		<div id="tagline-link-container">
 		
-			<a class="tagline-link" href="{$BaseHref}about"><span>tenants rights</span></a>
-			<a class="tagline-link" href="{$BaseHref}funding"><span>landlord topics</span></a>
-            <a class="tagline-link" href="{$BaseHref}funding"><span>move-in ideas</span></a>
-            <a class="tagline-link" href="{$BaseHref}funding"><span>roommate contract</span></a>
+			<% if HomePageLinkText1 %>
+			<% if HomePageLinkURL1 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL1}"><span>$HomePageLinkText1</span></a>
+			<% end_if %>
+			<% end_if %>
+			
+			<% if HomePageLinkText2 %>
+			<% if HomePageLinkURL2 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL2}"><span>$HomePageLinkText2</span></a>
+			<% end_if %>
+			<% end_if %>
+			
+			<% if HomePageLinkText3 %>
+			<% if HomePageLinkURL3 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL3}"><span>$HomePageLinkText3</span></a>
+			<% end_if %>
+			<% end_if %>
+
+			<% if HomePageLinkText4 %>
+			<% if HomePageLinkURL4 %> 
+			<a class="tagline-link" href="{$HomePageLinkURL4}"><span>$HomePageLinkText4</span></a>
+			<% end_if %>
+			<% end_if %>			
 	
 		</div>
 		<div class="clear"></div>	
@@ -85,7 +104,7 @@
 			-->
 
 
-			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<!--<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
 new TWTR.Widget({
   version: 2,
@@ -115,13 +134,13 @@ new TWTR.Widget({
     behavior: 'all'
   }
 }).render().setUser('uisg').start();
-</script>
+</script>-->
 	
 		
 <div id="homepage-contact-form">
 <a name="contact"></a>
-			<h3>Comments, Questions?</h3>
-			<p>If you'd like to request funding for your student organization, please take a look at our <a href="{$BaseHref}funding/">funding information</a>.</p>
+			<h3>Questions about housing?</h3>
+			<p>Have a question about moving in, moving out, troublesome neighbors? <a href="#">Send us an email</a>, or fill out the form below!</p>
 			
 			$ContactForm
 
@@ -137,12 +156,12 @@ new TWTR.Widget({
 				
 				<div id="headline-container">
 					<ul>
-						<% control BlogPosts(8) %>
+						<% control BlogPosts(4) %>
 							<li>
 							<h3><a href="$Link">$Title</a></h3>
-							<p class="posted-by"><a href="$Link">Posted on $Date.Format(F j)</a></p>
+							<p class="posted-by">Last Updated on $Date.Format(F j)</p>
 							<p class="blog-content">$Content.Summary(25)</p>
-							<p><a href="$Link">Read More</a></p>
+							<p class="read-more"><a href="$Link">Read More</a></p>
 							</li>
 						<% end_control %>
 					</ul>

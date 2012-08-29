@@ -2,14 +2,17 @@
 <div id="content"  class="typography">
 
 	<div id="content1">
-	
-	<% if SelectedTag = event %><h1>Events Calendar</h1><% else %><h1>News</h1><% end_if %>
-		<div id="blog-content">
-			
+			<div id="blog-content">
+			<% if SelectedTag %>
+			<h1>Topic: <span style="text-transform: capitalize">$SelectedTag</span></h1>
+			<% else_if SelectedDate %>
+				<h1><% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedDate.Month $SelectedDate.Year</h1>
+			<% else %>
+			<h1>Latest Rental Topics</h1>
+			<% end_if %>
 			<% include BreadCrumbs %>
 		
 			<% if SelectedDate %>
-				<h3><% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedDate.Month $SelectedDate.Year</h3>
 			<% end_if %>
 			
 			<% if BlogEntries %>

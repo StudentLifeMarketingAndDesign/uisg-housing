@@ -16,7 +16,7 @@
 
 .typography li {
 	margin-left: 10px;
-	font-size: 18px;
+	font-size: 16px;
 	/*color: #fef8d3;*/
 
 }
@@ -30,19 +30,19 @@
 
 .typography ol {
 	list-style-type: decimal;
-	list-style-position: inside;
-
+	margin-left: 20px;
 }
 
 .typography ol li {
 	margin: 5px 0;
 	font-size:16px;
 	padding-bottom:5px;
-
 }
+
 .typography a {
-	color: #c6ab18;
+	color: #494949;
 	text-decoration: none;
+	
 	
 	/*padding-bottom: 1px;
 	padding-left: 2px;
@@ -53,27 +53,78 @@
 
 }
 
+
+
+.read-more a {
+	color: #494949;
+	text-decoration: underline;
+	}
+
+.blogEntry a {
+	color: #C0A201;
+
+}
+
+.typography h1 {
+	font-family: 'Arvo', Helvetica, sans-serif;
+	font-size: 38px;
+	color: #000;
+	/*padding: 7px;*/
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+
+}
+
 .typography h2 {
 	/*font-family: 'Rokkit', serif; */
 		font-family: 'Arvo', Helvetica, sans-serif;
 	font-size: 32px;
 	color: #000;
 	padding: 6px 0;
+	
 
 }
 
 .typography h3, .typography h3 a {
 	/*font-family: 'Rokkit', serif;*/
 		font-family: 'Arvo', Helvetica, sans-serif;
-
-	font-size: 23px;
+	text-decoration:none;
+	font-size: 26px;
 	color: #000;
-	padding: 5px 0;
+	padding: 7px 0;
 
 }
 
 .typography .blogSummary p{
+	line-height: 20px;
+}
+
+.typography .blogSummary .tags a{
+	line-height: 20px;
+	text-decoration:none;
+	color:#c0a201;
+}
+
+ #blog-sidebar.typography ul {
 	line-height: 25px;
+	list-style-type: none;
+	margin:0;
+	color: #e7c81f;
+	text-decoration:none;
+
+}
+
+#blog-sidebar.typography ul li {
+	margin: 0;
+	color:#c0a201;
+	text-decoration:none;
+}
+
+#blog-sidebar.typography ul li a{
+	margin: 0;
+	color:#c0a201;
+	text-decoration:none;
 }
 
 .typography #featured-news h3 {
@@ -107,7 +158,7 @@
 }
 
 #footer a {
-	color: #fff;
+	color: #ccc;
 }
 
 #footer-content a {
@@ -116,13 +167,13 @@
 }
 
 #footer-content p {
-	color: white;
+	color: #ccc;
 	font-size: 16px;
 
 }
 
 #footer-content li a{
-	color: #fff;
+	color: #ccc;
 	text-transform:uppercase;
 }
 
