@@ -38,7 +38,7 @@
 					<ul id="nav">
 						<% control Menu(1) %>
 	
-								<li><a href="$Link" class="{$FirstLast} {$LinkOrSection}"><span>$MenuTitle</span></a>
+								<li <% if FirstLast %>class="$FirstLast"<% end_if %>><a href="$Link" class="{$FirstLast} {$LinkOrSection}"><span>$MenuTitle</span></a>
 									<% if URLSegment = branches %>
 										<ul>
 										<% control Children %>

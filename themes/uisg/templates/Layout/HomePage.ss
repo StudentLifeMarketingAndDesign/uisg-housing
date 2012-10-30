@@ -58,9 +58,9 @@
 			
 				<% control Children %>
 					<% if LinkURL %>
-						<a href="$LinkURL"><img src="$Image.URL" title="#htmlcaption-{$Pos}" /></a>
+						<a href="$LinkURL"><img src="<% control Image.SetWidth(500) %>$URL<% end_control %>" title="#htmlcaption-{$Pos}" /></a>
 					<% else %>
-						<img src="$Image.URL" title="#htmlcaption-{$Pos}" />
+						<img src="<% control Image.SetWidth(500) %>$URL<% end_control %>" title="#htmlcaption-{$Pos}" /><% 
 					<% end_if %>
 				<% end_control %>
 			
@@ -166,7 +166,7 @@ new TWTR.Widget({
 						<% end_control %>
 					</ul>
 					
-					<p><a href="{$BaseHref}news/">See all events and news</a></p>
+					<p class="see-all-topics"><a href="{$BaseHref}news/">See all topics</a></p>
 				</div><!-- end headline-container -->
 		
 			</div><!-- end featured-news -->
