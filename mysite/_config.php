@@ -40,3 +40,6 @@ RecaptchaField::$private_api_key = '6LcjsAgAAAAAAJNAXp7BiEvEas6scIeWzQdaS87c';
 FulltextSearchable::enable();
 
 
+if(Director::isLive()) {
+	Director::forceSSL(array('/^Security/','/^admin/'));
+}
